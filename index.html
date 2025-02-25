@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jeju+Gothic&display=swap" rel="stylesheet">
+    <title>Metric Unit Converter</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <button id="theme-toggle">🌙 Dark</button>
+    <div id="instructions" class="instruction-box">
+        <p>This converter converts:</p>
+        <ul>
+            <li>Length: meter to feet</li>
+            <li>Volume: litre to gallon</li>
+            <li>Mass: kilogram to pounds</li>
+        </ul>
+        <button onclick="hideInstructions()">Got it</button>
+    </div>
+    <div class="container">
+        <h2>Unit Converter</h2>
+        <input type="number" id="input-value" placeholder="Enter a number">
+        <button onclick="convert()">Convert</button>
+        
+        <div class="output">
+            <p id="length-result"></p>
+            <p id="volume-result"></p>
+            <p id="mass-result"></p>
+        </div>
+    </div>
+    
+    <script src="JavaScripts/scripts.js"></script>
+</body>
+</html>
