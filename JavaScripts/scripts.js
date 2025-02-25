@@ -3,7 +3,7 @@ const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
-    themeToggle.textContent = "☀️ Light";
+    themeToggle.textContent = "☀️";
 }
 
 themeToggle.addEventListener("click", () => {
@@ -11,10 +11,10 @@ themeToggle.addEventListener("click", () => {
 
     if (body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
-        themeToggle.textContent = "☀️ Light";
+        themeToggle.textContent = "☀️";
     } else {
         localStorage.setItem("theme", "light");
-        themeToggle.textContent = "🌙 Dark";
+        themeToggle.textContent = "🌙";
     }
 });
 
